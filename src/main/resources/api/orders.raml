@@ -1,0 +1,21 @@
+#%RAML 1.0
+title: orders
+
+/orders:
+  /{pid}:
+  post:
+    description: 
+    queryParameters:
+      custid:
+        type: number
+        example: 10
+    responses:
+      200:
+        body:
+          application/json:
+            type: 
+            example: !include examples/file.json
+              
+        
+
+          
